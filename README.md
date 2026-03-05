@@ -1,10 +1,17 @@
 # operating-calculation
 稼働率計算
 
-
 このプロジェクトは稼働率の計算を容易にするためのwebツールです。
-このプロジェクトのe2eテストをPlaywright MCPを用いて構築してください。
+Playwright MCPを用いて構築してくださいe2eとVRTを作成してください。
 計算結果の整合性を担保するために開始、終了の値でマトリクスを構築してください。
+
+URL: https://shinri-takayama.github.io/operating-calculation/
+
+
+**重要**
+`playwright`でテストを書く際に、`page.goto('/')`を利用すると存在しないページに飛んでしまいます。
+必ず、`page.goto('/operating-calculation)`を指定してください。
+`playwright.config.ts`は構築済みです。触らないこと。
 
 **テスト観点**
 - コンポーネントの存在確認
