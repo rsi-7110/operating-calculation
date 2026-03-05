@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e2e": "playwright test"
+    "e2e": "playwright test e2e/e2e.spec.ts",
+    "test:vrt": "playwright test e2e/vrt.spec.ts",
+    "test:vrt:update": "playwright test e2e/vrt.spec.ts --update-snapshots",
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
